@@ -19,7 +19,14 @@ def get_diff(numbers):
 print(get_diff(numbers))
 
 # 3. Print True if the list contains a 2 next to a 2 somewhere.
-
+def check_two_adjacency(numbers):
+	sorted_list = sorted(numbers)
+	for i in range (len(sorted_list)-1):
+		if sorted_list[i] == 2:
+			if sorted_list[i+1] == 2:
+				return True
+	return False
+print(check_two_adjacency(numbers))
 
 # 4. Print the sum of the numbers, 
 #    BUT ignore any section of numbers starting with a 6 and extending to the next 7.
