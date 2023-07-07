@@ -91,3 +91,23 @@ users["Erik"]["pets"].append(
 )
 print(users["Erik"]["pets"])
 # 10. Add another person to the users dictionary
+users["Rico"] = {
+	"twitter": "rico4life",
+	"lottery_numbers": [9, 72, 27, 37, 48, 21],
+	"home_town": "Glasgow",
+	"pets": [
+	{
+		"name": "Terrence",
+		"species": "cat"
+	},
+	{
+		"name": "Ricky Jr.",
+		"species": "dog"
+	},
+	{
+		"name": "Cassey",
+		"species": "dog"
+	}
+	]
+}
+print(users)
