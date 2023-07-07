@@ -80,5 +80,7 @@ print(get_even_lottery_nums("Avril"))
 users["Erik"]["lottery_numbers"].append(7)
 print(users["Erik"]["lottery_numbers"])
 # 8. Change Erik's hometown to Edinburgh
+users["Erik"]["home_town"] = "Edinburgh"
+print(users["Erik"]["home_town"])
 # 9. Add a pet dog to Erik called "fluffy"
 # 10. Add another person to the users dictionary
