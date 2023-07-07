@@ -32,7 +32,21 @@ print(check_two_adjacency(numbers))
 #    BUT ignore any section of numbers starting with a 6 and extending to the next 7.
 #    
 #    So [11, 6, 4, 99, 7, 11] would have sum of 22
+def print_but_ignore(numbers):
+	sum = 0
+	pause = False
+	for i in range(len(numbers)):
+		if numbers[i] == 6:
+			pause = True
+			continue
+		elif numbers[i] == 7:
+			pause = False
+			continue
+		if not pause:
+			sum += numbers[i]
+	return sum
 
+print(print_but_ignore([11, 6, 4, 99, 7, 11]))
 
 # 5. HARD! Print the sum of the numbers. 
 #    Except the number 13 is very unlucky, so it does not count.
