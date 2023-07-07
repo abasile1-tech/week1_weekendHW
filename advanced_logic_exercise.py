@@ -54,3 +54,13 @@ print(print_but_ignore([11, 6, 4, 99, 7, 11]))
 #    HINT - You will need to track the index throughout the loop.
 #
 #    So [5, 13, 2] would have sum of 5. 
+def print_sum_not_13(numbers):
+	sum = 0
+	for i in range(len(numbers)):
+		if i != 0 and numbers[i-1] == 13:
+			continue
+		if numbers[i] == 13:
+			continue
+		sum += numbers[i]
+	return sum
+print(print_sum_not_13([5,13,2]))
