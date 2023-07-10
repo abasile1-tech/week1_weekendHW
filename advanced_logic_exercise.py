@@ -21,9 +21,8 @@ print(get_diff(numbers))
 # 3. Print True if the list contains a 2 next to a 2 somewhere.
 def check_two_adjacency(numbers):
 	for i in range (len(numbers)-1):
-		if numbers[i] == 2:
-			if numbers[i+1] == 2:
-				return True
+		if numbers[i] == 2 and numbers[i+1] == 2:
+			return True
 	return False
 print(check_two_adjacency(numbers))
 
